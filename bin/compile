@@ -48,5 +48,5 @@ echo "export PATH=\$PATH:\$HOME/.chromedriver/bin" >> $BUILD_DIR/.profile.d/chro
 indent "Created"
 
 topic "Modifying chromedriver to prevent Selenium detection"
-perl -pi -e 's/cdc_/ild_/g' /app/.chromedriver/bin/chromedriver
+perl -pi -e 's/cdc_/ild_/g' $BIN_DIR/chromedriver
 indent "chromedriver modified"
